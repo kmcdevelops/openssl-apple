@@ -1,11 +1,9 @@
 // swift-tools-version:5.3
-// The swift-tools-version declares the minimum version of Swift required to build this package.
-
 import PackageDescription
 
 let filename = "openssl.xcframework.zip"
-let version = "3.6.300"
-let checksum = "ecb4b3972de7967ccaa37518c502a45b79f7a82bc4e10165455ac96309e64558"
+let version = "3.6.300-static"
+let checksum = "163b011cd225bbc663cabbc64c53899434de88d05e849226f8dcfdf4b598cd6c"
 
 let package = Package(
     name: "openssl-apple",
@@ -19,13 +17,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "openssl",
-            url: "https://github.com/partout-io/openssl-apple/releases/download/\(version)/\(filename)",
+            url: "https://github.com/kmcdevelops/openssl-apple/releases/download/\(version)/\(filename)",
             checksum: checksum
         ),
-
-        // local development
-//        .binaryTarget(
-//            name: "openssl",
-//            path: "frameworks/openssl.xcframework.zip")
     ]
 )
