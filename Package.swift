@@ -2,8 +2,8 @@
 import PackageDescription
 
 let filename = "openssl.xcframework.zip"
-let version = "3.6.300-static"
-let checksum = "163b011cd225bbc663cabbc64c53899434de88d05e849226f8dcfdf4b598cd6c"
+let version = "3.6.300-library"
+let checksum = "a2545ec591b4229f8017ea54f5e283b8720a9e04f492a6c00d70c036030cb666"
 
 let package = Package(
     name: "openssl-apple",
